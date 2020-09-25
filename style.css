@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.card {  
+    width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 58px;
+    background-color: #000;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    top: 177px;
+    left: -43px;
+    transform: translateZ(0) translateY(-50%);
+}
+
+.card:after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 58px;
+    background-color: #000;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    top: 177px;
+    left: 672px;
+    transform: translateZ(0) translateY(-50%);
+}
+
+.cardimg {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 65px;  
+    color: #fff;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    margin-left: 25px; 
+}
+
+.headerTextName {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.headerTextUserName {
+    font-size: 16px;
+    color: #8A8F98 
+}
+
+.avatar {
+    height: 82px;
+    width: 82px;  
+    border-radius: 50%;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.ticket {
+    width: 360px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ticketText {
+    transform: rotate(90deg) translateY(100px);
+    transform-origin: bottom right;   
+    font-size: 40px;
+    line-height: 1;
+    width: 100%; 
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 810px){ 
+    .card {
+        display: none;
+    }
+    #info {
+        display: block !important;     
+        color: #fff;
+        font-size: 25px;      
+    }
+}

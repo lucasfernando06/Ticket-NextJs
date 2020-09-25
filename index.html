@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ticket Next JS - LF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Next JS - Ticket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+        <div 
+            class="card"  
+            data-tilt 
+            data-tilt-max="5"
+            data-tilt-speed="100"                
+            data-tilt-full-page-listening
+            data-tilt-glare 
+            data-tilt-max-glare="0.2">
+            <img          
+                class="cardimg" 
+                src="ticket.svg" 
+            />            
+            <div class="header">
+                <img                                    
+                    class="avatar" 
+                    src="https://avatars2.githubusercontent.com/u/69875033?s=460&u=594124d80b789049c577bcba61b958cf88b06e62&v=4" 
+                />               
+                <div class="headerText">
+                    <span class="headerTextName">Lucas Fernando</span>                    
+                    <span class="headerTextUserName">
+                        <i class="fab fa-github icon"></i>
+                        lucasfernando06
+                    </span>
+                </div>               
+            </div>
+            <div class="ticket">
+                <div class="ticketText">№ 060496</div>
+            </div>
+        </div>
+        <span 
+            id="info"
+            style="display: none;">Amplie sua tela para ver o ticket</span>
+      </div>  
+      <script src="https://kit.fontawesome.com/403d8ba0b4.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="vanilla-tilt.js"></script>     
+  </body>
+</html>
